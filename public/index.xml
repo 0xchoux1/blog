@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>思考のAPI</title>
+    <link>//localhost:35983/</link>
+    <description>Recent content on 思考のAPI</description>
+    <generator>Hugo</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Wed, 20 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:35983/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>//localhost:35983/about/</link>
+      <pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:35983/about/</guid>
+      <description>こんにちは、0xchoux1です。&#xA;このブログは、日々の気付きや学びを記録していく場です。 技術の話や開発での経験、ちょっとした発見などを書き残しています。&#xA;技術ネタ 開発でハマったこと おすすめツールやライブラリ 日常のメモや考えごと 自分の備忘録として、また、どなたかの参考になれば幸いです。</description>
+    </item>
+    <item>
+      <title>Hello World</title>
+      <link>//localhost:35983/posts/hello-world/</link>
+      <pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:35983/posts/hello-world/</guid>
+      <description>はじめてのブログ記事 Link to heading こんにちは！これは私の技術ブログの最初の記事です。&#xA;Hugoについて Link to heading Hugoは、Go言語で書かれた高速な静的サイトジェネレーターです。 MarkdownファイルからHTMLを生成し、シンプルで高速なウェブサイトを作成できます。&#xA;これからの予定 Link to heading このブログでは、以下のような内容を書いていきたいと思います：&#xA;技術的な知見の共有 開発で学んだこと おすすめのツールやライブラリ よろしくお願いします！</description>
+    </item>
+  </channel>
+</rss>

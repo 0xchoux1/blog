@@ -1,0 +1,38 @@
+baseURL = '/'
+languageCode = 'ja-jp'
+title = '思考のAPI'
+theme = 'coder'
+
+[params]
+  author = "0xchoux1"
+  info = "技術ブログ/日々の学び、気付き/思考のアウトプット"
+  description = "思考のAPI - 技術ブログ/日々の学び、気付き/思考のアウトプット"
+  keywords = "blog,技術,学び,アウトプット"
+  avatarurl = "images/avatar.jpg"
+  # 画像は static/images/avatar.jpg に配置してください
+  # サイトの配色
+  colorScheme = "auto" # "auto", "dark", "light" から選択
+  hidecredits = false
+  hidecopyright = false
+  rtl = false
+  math = false
+  # SNS
+  github = "0xchoux1"
+  twitter = "0xchoux1"
+
+[[menu.main]]
+  name = "ホーム"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 2
+
+[markup]
+  [markup.highlight]
+    style = "monokai"
+    lineNos = true
+    lineNumbersInTable = false
+    noClasses = false
