@@ -19,6 +19,7 @@ theme = 'coder'
   # SNS
   github = "0xchoux1"
   twitter = "0xchoux1"
+  mainSections = ["posts"]
 
 [[menu.main]]
   name = "ホーム"
