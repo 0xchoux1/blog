@@ -27,9 +27,14 @@ theme = 'coder'
   weight = 1
 
 [[menu.main]]
+  name = "Blog"
+  url = "/posts/"
+  weight = 2
+
+[[menu.main]]
   name = "About"
   url = "/about/"
-  weight = 2
+  weight = 3
 
 [markup]
   [markup.highlight]
