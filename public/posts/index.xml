@@ -2,18 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on 思考のAPI</title>
-    <link>//localhost:35983/posts/</link>
+    <link>//localhost:46479/posts/</link>
     <description>Recent content in Posts on 思考のAPI</description>
     <generator>Hugo</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Wed, 20 Mar 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="//localhost:35983/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 06 May 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:46479/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MCPサーバーのPython実装：基本構造の設計</title>
+      <link>//localhost:46479/posts/2025-05-06-mcp-server-python-basic-structure/</link>
+      <pubDate>Tue, 06 May 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:46479/posts/2025-05-06-mcp-server-python-basic-structure/</guid>
+      <description>MCPサーバーのPython実装：基本構造の設計 Link to heading はじめに Link to heading Model Context Protocol (MCP) サーバーの実装を、TypeScriptからPythonに移行することにしました。この記事では、Pythonプロジェクトの基本構造の設計について説明します。&#xA;プロジェクト構造の選択 Link to heading ディレクトリ構造 Link to heading . ├── src/ # ソースコード ├── tests/ # テストコード ├── requirements.txt # 依存関係 └── README.md # プロジェクト説明 この構造を選んだ理由：&#xA;src/: メインのソースコードを格納し、コードの整理を容易にします tests/: テストコードを分離することで、テストの管理が容易になります requirements.txt: Pythonの依存関係管理の標準的な方法です README.md: プロジェクトの説明と使用方法を文書化します 使用するライブラリ Link to heading 1fastapi==0.110.0 # モダンなWebフレームワーク 2uvicorn==0.27.1 # ASGIサーバー 3pydantic==2.6.3 # データバリデーション 4python-dotenv==1.0.1 # 環境変数管理 5pytest==8.0.2 # テストフレームワーク これらのライブラリを選んだ理由：&#xA;FastAPI: モダンで高速なWebフレームワークで、自動的なAPIドキュメント生成をサポート Uvicorn: 非同期処理に最適化されたASGIサーバー Pydantic: 型安全なデータバリデーションを提供 python-dotenv: 環境変数の管理を容易に pytest: 使いやすく強力なテストフレームワーク 開発環境のセットアップ Link to heading 仮想環境の作成 Link to heading 1python -m venv venv 2source venv/bin/activate # Linuxの場合 3# または 4.</description>
+    </item>
     <item>
       <title>Hello World</title>
-      <link>//localhost:35983/posts/hello-world/</link>
+      <link>//localhost:46479/posts/hello-world/</link>
       <pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:35983/posts/hello-world/</guid>
+      <guid>//localhost:46479/posts/hello-world/</guid>
       <description>はじめてのブログ記事 Link to heading こんにちは！これは私の技術ブログの最初の記事です。&#xA;Hugoについて Link to heading Hugoは、Go言語で書かれた高速な静的サイトジェネレーターです。 MarkdownファイルからHTMLを生成し、シンプルで高速なウェブサイトを作成できます。&#xA;これからの予定 Link to heading このブログでは、以下のような内容を書いていきたいと思います：&#xA;技術的な知見の共有 開発で学んだこと おすすめのツールやライブラリ よろしくお願いします！</description>
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:46479/posts/2025-05-06-mcp-server-python-basic-implementation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:46479/posts/2025-05-06-mcp-server-python-basic-implementation/</guid>
+      <description>MCPサーバーのPython実装：基本クラス構造 Link to heading はじめに Link to heading 前回の記事で設計した基本構造に基づいて、MCPサーバーの基本クラス構造を実装しました。この記事では、実装の詳細と設計の意図について説明します。&#xA;実装の概要 Link to heading プロジェクトは以下の3つの主要なファイルで構成されています：&#xA;models.py: データモデルの定義 server.py: MCPサーバーの基本クラス main.py: FastAPIを使用したHTTPサーバー データモデルの実装 Link to heading models.pyでは、Pydanticを使用して型安全なデータモデルを定義しています：&#xA;1class ServerCapabilities(BaseModel): 2 &amp;#34;&amp;#34;&amp;#34;サーバーの機能を定義するモデル&amp;#34;&amp;#34;&amp;#34; 3 logging: Dict[str, Any] = {} 4 completions: Dict[str, Any] = {} 5 prompts: Dict[str, bool] = {&amp;#34;listChanged&amp;#34;: True} 6 resources: Dict[str, bool] = {&amp;#34;subscribe&amp;#34;: True, &amp;#34;listChanged&amp;#34;: True} 7 tools: Dict[str, bool] = {&amp;#34;listChanged&amp;#34;: True} Pydanticを使用する利点：&#xA;自動的なバリデーション 型の安全性 JSONシリアライズ/デシリアライズの自動化 サーバークラスの実装 Link to heading server.</description>
     </item>
   </channel>
 </rss>
