@@ -1,3 +1,9 @@
+---
+title: "MCPサーバーのPython実装：基本クラス構造"
+date: 2025-05-06
+draft: false
+---
+
 # MCPサーバーのPython実装：基本クラス構造
 
 ## はじめに
