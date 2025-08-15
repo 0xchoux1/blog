@@ -1,0 +1,33 @@
+# Hugo
+public/
+resources/_gen/
+assets/jsconfig.json
+hugo_stats.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Hugo lock file
+.hugo_build.lock
+
+# Hugo binary (if downloaded)
+hugo
+hugo_extended_*.tar.gz
+
+# Cursor IDE
+.cursor/

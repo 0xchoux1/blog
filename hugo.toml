@@ -3,6 +3,11 @@ languageCode = 'ja-jp'
 title = '思考のAPI'
 theme = 'coder'
 
+[taxonomies]
+  tag = 'tags'
+  category = 'categories'
+  series = 'series'
+
 [params]
   author = "0xchoux1"
   info = "技術ブログ/日々の学び、気付き/思考のアウトプット"
